@@ -1,5 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -96,4 +97,34 @@
 #menu-icon {
     font-size: 34px;
     cursor: pointer;
+}
+
+.content.active {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.side-navbar {
+    width: 60px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        left: 0;
+    }
+
+    .side-navbar {
+        width: 60px;
+        left: -60px;
+    }
+
+    .content.active {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+
+    .side-navbar.content.active {
+        left: 0;
+    }
 }
