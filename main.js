@@ -3,6 +3,6 @@ let sidenavbar = document.querySelector('.side-navbar');
 let content = document.querySelector('.content');
 
 menu.onclick = () => {
-    sidenavbar.classList.toggle('active');
-    content.classList.toggle('active');
+    sidenavbar.classList.toggle('hidden'); //for sliding effect
+    content.classList.toggle('full');      // for shifting content
 }

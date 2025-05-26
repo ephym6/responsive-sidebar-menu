@@ -22,7 +22,7 @@
     width: 260px;
     background: #460044;
     overflow: hidden;
-    transition: 0.3s ease;
+    transition: left 0.3s ease;
     left: 0;
     z-index: 10;
 }
@@ -79,7 +79,12 @@
     width: calc(100% - 260px);
     left: 260px;
     max-height: 100vh;
-    transition: 0.5s ease;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.content.full {
+    width: 100%;
+    left: 0;
 }
 
 .top-navbar {
@@ -119,8 +124,6 @@
     .content {
         width: 100%;
         left: 0;
-        transition: 0.3s ease;
-        position: absolute;
     }
 
     .side-navbar {
