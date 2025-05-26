@@ -23,6 +23,12 @@
     background: #460044;
     overflow: hidden;
     transition: 0.5s ease;
+    left: 0;
+    z-index: 10;
+}
+
+.side-navbar.hidden {
+    left: -260px;
 }
 
 .side-navbar ul {
@@ -105,7 +111,8 @@
 }
 
 .side-navbar {
-    width: 60px;
+    width: 260px;
+    transition: 0.5s ease;
 }
 
 @media (max-width: 768px) {
@@ -115,16 +122,16 @@
     }
 
     .side-navbar {
-        width: 60px;
-        left: -60px;
+        left: -260px;
+        position: fixed;
     }
 
     .content.active {
-        width: calc(100% - 60px);
-        left: 60px;
+        width: calc(100% - 260px);
+        left: 260px;
     }
 
-    .side-navbar.content.active {
+    .side-navbar.active {
         left: 0;
     }
 }
